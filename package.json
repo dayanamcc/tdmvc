@@ -1,0 +1,25 @@
+{
+  "name": "tdmvc",
+  "version": "1.0.0",
+  "description": "todo mvc e2e testing",
+  "main": "nightwatch.conf.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "dependencies": {
+    "chromedriver": "^2.25.1",
+    "selenium-server": "^3.0.1"
+  },
+  "devDependencies": {
+    "chromedriver": "^2.25.1",
+    "http-server": "^0.9.0",
+    "nightwatch": "^0.9.9"
+  },
+  "scripts": {
+    "start":"http-server examples/vue",
+    "test": "nightwatch"
+  },
+  "author": "dayanamcc@gmail.com",
+  "license": "ISC"
+}
