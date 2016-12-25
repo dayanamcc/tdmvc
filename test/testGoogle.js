@@ -1,5 +1,6 @@
 module.exports = {
-  '@disabled': true, // This will prevent the test module from running.
+  '@disabled': false, // This will prevent the test module from running.
+  '@tags': ['google'],
 
   'Demo test Google' : function (browser) {
     browser

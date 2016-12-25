@@ -8,16 +8,16 @@
     "test": "test"
   },
   "dependencies": {
-    "chromedriver": "^2.25.1",
-    "selenium-server": "^3.0.1"
   },
   "devDependencies": {
+    "geckodriver": "^1.2.0",
     "chromedriver": "^2.25.1",
     "http-server": "^0.9.0",
-    "nightwatch": "^0.9.9"
+    "nightwatch": "^0.9.9",
+    "selenium-server": "^3.0.1"
   },
   "scripts": {
-    "start":"http-server examples/vue",
+    "start": "http-server examples/vue",
     "test": "nightwatch"
   },
   "author": "dayanamcc@gmail.com",

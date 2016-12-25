@@ -7,15 +7,17 @@ module.exports = {
   "globals_path" : "",
 
   "selenium" : {
-    "start_process" : true,
-    "server_path" : "./node_modules/selenium-server/lib/runner/selenium-server-standalone-3.0.1.jar",
+    "start_process" : false,
+    "server_path" : "/Users/dayanacabrera/.nvm/versions/node/v7.2.0/lib/node_modules/selenium-standalone/.selenium/selenium-server/3.0.1-server.jar",
     "log_path" : "",
     "host": "127.0.0.1",
     "port" : 4444,
     "cli_args" : {
-      "webdriver.chrome.driver" : "./node_modules/chromedriver/bin/chromedriver",
-      "webdriver.gecko.driver" : "./node_modules/geckodriver/bin/geckodriver",
+      "webdriver.gecko.driver" : "/Users/dayanacabrera/.nvm/versions/node/v7.2.0/lib/node_modules/selenium-standalone/.selenium/geckodriver/0.10.0-x64-geckodriver",
+      "webdriver.chrome.driver" : "/Users/dayanacabrera/.nvm/versions/node/v7.2.0/lib/node_modules/selenium-standalone/.selenium/chromedriver/2.23-x64-chromedriver",
       //"webdriver.safari.driver" : "./node_modules/geckodriver/bin/geckodriver",
+      //"webdriver.chrome.driver" : "/Users/dayanacabrera/.nvm/versions/node/v7.2.0/lib/node_modules/selenium-standalone/.selenium/chromedriver/2.25-x64-chromedriver",
+      //"webdriver.gecko.driver" : "/Users/dayanacabrera/.nvm/versions/node/v7.2.0/lib/node_modules/selenium-standalone/.selenium/geckodriver/0.10.0-x64-geckodriver",
     }
   },
 
@@ -35,13 +37,13 @@ module.exports = {
     "chrome" : {
       "desiredCapabilities": {
         "browserName": "chrome",
+        "javascriptEnabled": true
       }
     },
     "firefox" : {
       "desiredCapabilities": {
         "browserName": "firefox",
         "marionette": true,
-        // javascriptEnabled: true
       }
     },
     // "desiredCapabilities" : {

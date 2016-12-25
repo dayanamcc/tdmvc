@@ -51,3 +51,50 @@ npm install selenium-standalone@latest -g
 selenium-standalone install
 selenium-standalone install --drivers.chrome.version=2.15 --drivers.chrome.baseURL=https://chromedriver.storage.googleapis.com
 selenium-standalone start
+
+
+selenium-standalone install
+
+---
+selenium install:
+from: https://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.1.jar
+to: /Users/dayanacabrera/.nvm/versions/node/v7.2.0/lib/node_modules/selenium-standalone/.selenium/selenium-server/2.53.1-server.jar
+---
+chrome install:
+from: https://chromedriver.storage.googleapis.com/2.25/chromedriver_mac64.zip
+to: /Users/dayanacabrera/.nvm/versions/node/v7.2.0/lib/node_modules/selenium-standalone/.selenium/chromedriver/2.25-x64-chromedriver
+---
+firefox install:
+from: https://github.com/mozilla/geckodriver/releases/download/v0.10.0/geckodriver-v0.10.0-macos.tar.gz
+to: /Users/dayanacabrera/.nvm/versions/node/v7.2.0/lib/node_modules/selenium-standalone/.selenium/geckodriver/0.10.0-x64-geckodriver
+
+
+selenium-standalone install --version=3.0.1 --baseURL=https://selenium-release.storage.googleapis.com
+---
+selenium install:
+from: https://selenium-release.storage.googleapis.com/3.0/selenium-server-standalone-3.0.1.jar
+to: /Users/dayanacabrera/.nvm/versions/node/v7.2.0/lib/node_modules/selenium-standalone/.selenium/selenium-server/3.0.1-server.jar
+---
+chrome install:
+from: https://chromedriver.storage.googleapis.com/2.25/chromedriver_mac64.zip
+to: /Users/dayanacabrera/.nvm/versions/node/v7.2.0/lib/node_modules/selenium-standalone/.selenium/chromedriver/2.25-x64-chromedriver
+---
+firefox install:
+from: https://github.com/mozilla/geckodriver/releases/download/v0.10.0/geckodriver-v0.10.0-macos.tar.gz
+to: /Users/dayanacabrera/.nvm/versions/node/v7.2.0/lib/node_modules/selenium-standalone/.selenium/geckodriver/0.10.0-x64-geckodriver
+---
+File from https://chromedriver.storage.googleapis.com/2.25/chromedriver_mac64.zip has already been downloaded
+---
+File from https://github.com/mozilla/geckodriver/releases/download/v0.10.0/geckodriver-v0.10.0-macos.tar.gz has already been downloaded
+
+
+
+
+selenium-standalone install --drivers.chrome.version=2.6 --drivers.chrome.baseURL=https://chromedriver.storage.googleapis.com
+
+
+java \
+ -Dwebdriver.chrome.driver=/Users/dayanacabrera/.nvm/versions/node/v7.2.0/lib/node_modules/selenium-standalone/.selenium/chromedriver/2.25-x64-chromedriver \
+ -Dwebdriver.gecko.driver=/Users/dayanacabrera/.nvm/versions/node/v7.2.0/lib/node_modules/selenium-standalone/.selenium/geckodriver/0.10.0-x64-geckodriver \
+ -Dtimeout=90000 -DsessionTimeout=90000 \
+ -jar /Users/dayanacabrera/.nvm/versions/node/v7.2.0/lib/node_modules/selenium-standalone/.selenium/selenium-server/3.0.1-server.jar

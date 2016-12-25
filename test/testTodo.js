@@ -4,9 +4,12 @@
 //.click('button[name=btnG]')
 
 module.exports = {
+  '@tags': ['todo'],
+
   'test add TODO' : function (browser) {
     console.log('globals', browser.globals);
     browser
+      .pause(3000)
       .url('http://127.0.0.1:8080')
       .waitForElementVisible('body', 1000)
       .setValue('input[class=new-todo]', 'nightwatch')// 'input[type=text]'
